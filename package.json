@@ -4,8 +4,9 @@
   "description": "example",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+	    "test": "node src/js/joker.mjs",
+	    "format": "prettier -w src/js/joker.mjs"
+	  },
   "repository": {
     "type": "test",
     "url": "git+https://github.com/omro0107/joker.git"
