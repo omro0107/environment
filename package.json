@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/omro0107/joker#readme",
   "devDependencies": {
+    "eslint": "^8.57.1",
     "prettier": "^3.3.3"
   },
   "dependencies": {
