@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "test": "node src/js/joker.test.mjs",
-    "format": "prettier -w src/**/*.mjs"
+    "format": "prettier -w src/**/*.mjs",
+    "lint": "eslint src/**/*.mjs"
   },
   "repository": {
     "type": "test",
