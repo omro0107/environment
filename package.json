@@ -1,13 +1,14 @@
 {
   "name": "joker",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "example",
   "main": "src/index.js",
   "scripts": {
     "test": "node src/js/joker.test.mjs",
     "format": "prettier -w src/**/*.mjs",
     "lint": "eslint src/**/*.mjs",
-    "lint-fix": "eslint src/**/*.mjs --cache --fix"
+    "lint-fix": "eslint src/**/*.mjs --cache --fix",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "test",
@@ -30,5 +31,17 @@
   },
   "dependencies": {
     "give-me-a-joke": "^0.5.1"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.html": [
+      "prettier --write"
+    ],
+    "*.scss": [
+      "prettier --write"
+    ]
   }
 }
