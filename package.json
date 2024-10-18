@@ -1,11 +1,13 @@
 {
   "name": "joker",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "description": "example",
   "main": "src/index.js",
   "scripts": {
-    "test": "node src/js/joker.mjs",
-    "format": "prettier -w src/js/joker.mjs"
+    "test": "node src/js/joker.test.mjs",
+    "format": "prettier -w src/**/*.mjs",
+    "lint": "eslint src/**/*.mjs",
+    "lint-fix": "eslint src/**/*.mjs --cache --fix"
   },
   "repository": {
     "type": "test",
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/omro0107/joker#readme",
   "devDependencies": {
+    "eslint": "^8.57.1",
     "prettier": "^3.3.3"
   },
   "dependencies": {
